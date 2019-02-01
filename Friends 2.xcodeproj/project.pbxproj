@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82961AA52203C9FA008D28D4 /* FriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82961AA42203C9FA008D28D4 /* FriendController.swift */; };
 		82C255572167B4A5007FD31E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C255562167B4A5007FD31E /* AppDelegate.swift */; };
-		82C255592167B4A5007FD31E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C255582167B4A5007FD31E /* ViewController.swift */; };
 		82C2555C2167B4A5007FD31E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C2555A2167B4A5007FD31E /* Main.storyboard */; };
 		82C2555E2167B4A6007FD31E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C2555D2167B4A6007FD31E /* Assets.xcassets */; };
 		82C255612167B4A6007FD31E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C2555F2167B4A6007FD31E /* LaunchScreen.storyboard */; };
+		82C255692167B4EA007FD31E /* ImageTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C255682167B4EA007FD31E /* ImageTransitionAnimator.swift */; };
+		82C2556B2167B521007FD31E /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C2556A2167B521007FD31E /* Friend.swift */; };
+		82C2556D2167B54A007FD31E /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C2556C2167B54A007FD31E /* FriendDetailViewController.swift */; };
+		82C2556F2167B570007FD31E /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C2556E2167B570007FD31E /* FriendsTableViewController.swift */; };
+		82C255712167B592007FD31E /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C255702167B592007FD31E /* NavigationControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82961AA42203C9FA008D28D4 /* FriendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendController.swift; sourceTree = "<group>"; };
 		82C255532167B4A5007FD31E /* Friends 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Friends 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C255562167B4A5007FD31E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		82C255582167B4A5007FD31E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		82C2555B2167B4A5007FD31E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82C2555D2167B4A6007FD31E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82C255602167B4A6007FD31E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82C255622167B4A6007FD31E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82C255682167B4EA007FD31E /* ImageTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransitionAnimator.swift; sourceTree = "<group>"; };
+		82C2556A2167B521007FD31E /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		82C2556C2167B54A007FD31E /* FriendDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
+		82C2556E2167B570007FD31E /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
+		82C255702167B592007FD31E /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,68 @@
 		82C255552167B4A5007FD31E /* Friends 2 */ = {
 			isa = PBXGroup;
 			children = (
+				82C255742167B6D4007FD31E /* Model */,
+				82C255732167B6C7007FD31E /* Animation */,
+				82C255752167B6F2007FD31E /* View Controller */,
+				82C255762167B6FC007FD31E /* Delegate */,
+				82C255772167B704007FD31E /* Stroyboard */,
+				82C255722167B6BF007FD31E /* Resources */,
+			);
+			path = "Friends 2";
+			sourceTree = "<group>";
+		};
+		82C255722167B6BF007FD31E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				82C255562167B4A5007FD31E /* AppDelegate.swift */,
-				82C255582167B4A5007FD31E /* ViewController.swift */,
-				82C2555A2167B4A5007FD31E /* Main.storyboard */,
 				82C2555D2167B4A6007FD31E /* Assets.xcassets */,
 				82C2555F2167B4A6007FD31E /* LaunchScreen.storyboard */,
 				82C255622167B4A6007FD31E /* Info.plist */,
 			);
-			path = "Friends 2";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		82C255732167B6C7007FD31E /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				82C255682167B4EA007FD31E /* ImageTransitionAnimator.swift */,
+			);
+			name = Animation;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		82C255742167B6D4007FD31E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82C2556A2167B521007FD31E /* Friend.swift */,
+				82961AA42203C9FA008D28D4 /* FriendController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		82C255752167B6F2007FD31E /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				82C2556E2167B570007FD31E /* FriendsTableViewController.swift */,
+				82C2556C2167B54A007FD31E /* FriendDetailViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		82C255762167B6FC007FD31E /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				82C255702167B592007FD31E /* NavigationControllerDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		82C255772167B704007FD31E /* Stroyboard */ = {
+			isa = PBXGroup;
+			children = (
+				82C2555A2167B4A5007FD31E /* Main.storyboard */,
+			);
+			path = Stroyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +199,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82C255592167B4A5007FD31E /* ViewController.swift in Sources */,
+				82C255692167B4EA007FD31E /* ImageTransitionAnimator.swift in Sources */,
+				82961AA52203C9FA008D28D4 /* FriendController.swift in Sources */,
+				82C2556F2167B570007FD31E /* FriendsTableViewController.swift in Sources */,
 				82C255572167B4A5007FD31E /* AppDelegate.swift in Sources */,
+				82C2556D2167B54A007FD31E /* FriendDetailViewController.swift in Sources */,
+				82C255712167B592007FD31E /* NavigationControllerDelegate.swift in Sources */,
+				82C2556B2167B521007FD31E /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Friends 2/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Friends 2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Friends 2/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Friends 2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
